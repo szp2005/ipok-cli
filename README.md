@@ -37,6 +37,16 @@ bash <(curl -sL https://raw.githubusercontent.com/szp2005/ipok-cli/main/ipok.sh)
 
 Requirements: `curl` + `python3` (present on virtually all Linux servers).
 
+## Streaming / AI unlock (run on the server)
+
+Test what **this server's exit IP** can unlock — Netflix (full / originals-only / blocked + region), ChatGPT region support, YouTube Premium, TikTok:
+
+```bash
+bash <(curl -sL https://raw.githubusercontent.com/szp2005/ipok-cli/main/media.sh)
+```
+
+Results reflect the server's outbound IP (the proxy/VPS use-case). Streaming providers change endpoints often, so treat results as best-effort.
+
 ## Why
 
 Most IP-purity tools give a single black-box score. IPOK aggregates multiple risk sources and shows **why** an IP is flagged, plus AI-service availability and use-case fit — the stuff that actually matters for proxies, cross-border, and AI accounts.
