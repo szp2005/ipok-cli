@@ -15,11 +15,12 @@ Check any IP's quality from your VPS or terminal in one line: risk score, reside
   IP             1.1.1.1  IPv4
   Location       Australia / South Brisbane
   ASN            AS13335  CLOUDFLARENET
-  Type           hosting   native: native
-  Risk           55/100  Caution
+  Type           business   native: broadcast
+  Risk           11/100  Pristine
+  Signals        hosting
   AI             ChatGPT:OK  Claude:OK  Gemini:OK
-  Use-case       tiktok **    ecommerce **    social **    ai ****
-  Sources        ip-api=55
+  Use-case       tiktok **     ecommerce **     social **     ai *****
+  Sources        ip-api=55, Scamalytics=0, proxycheck=0, AbuseIPDB=0, ipapi.is=30, StopForumSpam=0
   ----------------------------------------------
   full report:  https://ipok.io/?ip=1.1.1.1
 ```
