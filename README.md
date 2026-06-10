@@ -1,5 +1,7 @@
 # IPOK CLI
 
+[![IP risk](https://ipok.io/api/badge?ip=1.1.1.1&label=demo%20IP)](https://ipok.io/?ip=1.1.1.1)
+
 > Terminal IP **purity / risk / AI-availability** check — powered by [ipok.io](https://ipok.io)
 
 Check any IP's quality from your VPS or terminal in one line: risk score, residential vs datacenter, **native IP**, whether it can use **ChatGPT / Claude / Gemini**, use-case fit for **TikTok / e-commerce / social / AI**, and more.
