@@ -6,6 +6,9 @@ Check any IP's quality from your VPS or terminal in one line: risk score, reside
 
 一行命令测 IP 纯净度 / 风险值 / 能不能用 AI —— 由 [ipok.io](https://ipok.io) 提供数据。
 
+> 🧩 Prefer a browser? Get the **[IPOK Chrome extension](https://chromewebstore.google.com/detail/jnbkfmgldcchpdgnegafakbcnmkdhiai)** — one click to check your current IP's purity. ·
+> 想用浏览器？装 **[IPOK Chrome 插件](https://chromewebstore.google.com/detail/jnbkfmgldcchpdgnegafakbcnmkdhiai)**，一键查当前 IP 纯净度。
+
 ```
   IPOK  ip check  ipok.io
   ----------------------------------------------
