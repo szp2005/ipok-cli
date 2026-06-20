@@ -27,21 +27,42 @@ Check any IP's quality from your VPS or terminal in one line: risk score, reside
   full report:  https://ipok.io/?ip=1.1.1.1
 ```
 
-## Quick start
+## Install
 
-Check this server's egress IP:
-
-```bash
-bash <(curl -sL https://raw.githubusercontent.com/szp2005/ipok-cli/main/ipok.sh)
-```
-
-Check a specific IP:
+Pick whichever fits your stack — all give you the same `ipok` command:
 
 ```bash
-bash <(curl -sL https://raw.githubusercontent.com/szp2005/ipok-cli/main/ipok.sh) 1.1.1.1
+# Node (no install, run once)
+npx ipok-cli                 # check this machine's egress IP
+npx ipok-cli 1.1.1.1         # check a specific IP
+
+# Python
+pip install ipok             # then:  ipok  /  ipok 1.1.1.1
+pipx run ipok 1.1.1.1        # zero-install one-off
+
+# Homebrew (macOS / Linux)
+brew install szp2005/ipok/ipok
 ```
 
-Requirements: `curl` + `python3` (present on virtually all Linux servers).
+### Usage
+
+```bash
+ipok                 # check this machine's egress IP
+ipok 1.1.1.1         # check a specific IP
+ipok --json 1.1.1.1  # raw JSON
+ipok --help
+```
+
+Set `IPOK_API` to point at a self-hosted endpoint; set `NO_COLOR=1` to disable colors.
+
+### No-install one-liner (servers / CI)
+
+Just `curl` + `python3`, nothing to install — ideal on a bare VPS:
+
+```bash
+bash <(curl -sL https://raw.githubusercontent.com/szp2005/ipok-cli/main/ipok.sh)          # this server's IP
+bash <(curl -sL https://raw.githubusercontent.com/szp2005/ipok-cli/main/ipok.sh) 1.1.1.1   # a specific IP
+```
 
 ## Streaming / AI unlock (run on the server)
 

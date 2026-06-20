@@ -1,0 +1,40 @@
+{
+  "name": "ipok-cli",
+  "version": "0.1.0",
+  "description": "Terminal IP purity / risk / AI-availability check — powered by ipok.io. Check any IP's risk score, residential-vs-datacenter, native IP, and whether it can use ChatGPT/Claude/Gemini, in one line.",
+  "bin": {
+    "ipok": "bin/ipok.js"
+  },
+  "type": "commonjs",
+  "files": [
+    "bin/ipok.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "ip",
+    "ip-reputation",
+    "ip-quality",
+    "ip-purity",
+    "fraud",
+    "risk-score",
+    "proxy-detection",
+    "vpn-detection",
+    "geoip",
+    "cli",
+    "ping0"
+  ],
+  "homepage": "https://ipok.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szp2005/ipok-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/szp2005/ipok-cli/issues"
+  },
+  "license": "MIT",
+  "author": "ipok.io"
+}

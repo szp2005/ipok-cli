@@ -1,0 +1,19 @@
+# secrets — NEVER commit
+.env
+.env.*
+*.token
+
+# python build
+dist/
+build/
+*.egg-info/
+__pycache__/
+*.pyc
+.venv/
+
+# node
+node_modules/
+*.tgz
+
+# misc
+.DS_Store

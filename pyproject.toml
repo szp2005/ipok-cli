@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ipok"
+version = "0.1.0"
+description = "Terminal IP purity / risk / AI-availability check — powered by ipok.io"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "ipok.io" }]
+keywords = [
+    "ip", "ip-reputation", "ip-quality", "fraud", "risk-score",
+    "proxy-detection", "vpn-detection", "ip-purity", "geoip", "cli",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Internet",
+    "Topic :: Security",
+    "Topic :: System :: Networking",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://ipok.io"
+Repository = "https://github.com/szp2005/ipok-cli"
+
+[project.scripts]
+ipok = "ipok.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ipok"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src/ipok", "README.md", "LICENSE"]
